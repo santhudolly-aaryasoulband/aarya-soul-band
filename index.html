@@ -1,812 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Aarya Soul Band | Official Website</title>
-
-    <meta name="description"
-          content="Aarya Soul Band – Music, emotions and stories from Santhosh S R. Listen to the latest Kannada songs and releases.">
-
-    <meta name="theme-color" content="#080808">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #080808;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            padding: 18px 7%;
-
-            background: rgba(0,0,0,0.72);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: 2px;
-        }
-
-        .logo span {
-            opacity: .55;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-            font-size: 14px;
-        }
-
-        .nav-links a {
-            opacity: .75;
-            transition: .3s;
-        }
-
-        .nav-links a:hover {
-            opacity: 1;
-        }
-
-        /* HERO */
-
-        .hero {
-            min-height: 100vh;
-
-            display: flex;
-            align-items: center;
-
-            padding: 120px 7% 80px;
-
-            background:
-                radial-gradient(circle at 75% 35%, rgba(150,100,255,.22), transparent 30%),
-                radial-gradient(circle at 25% 70%, rgba(255,70,120,.12), transparent 30%),
-                #080808;
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .small-label {
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 12px;
-            opacity: .55;
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-size: clamp(55px, 10vw, 125px);
-            line-height: .9;
-            letter-spacing: -5px;
-            margin-bottom: 30px;
-        }
-
-        .hero h1 span {
-            display: block;
-            background: linear-gradient(90deg,#ffffff,#aaa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            max-width: 600px;
-            font-size: 18px;
-            color: #aaa;
-            margin-bottom: 35px;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 14px 25px;
-
-            border-radius: 40px;
-
-            font-size: 14px;
-            font-weight: bold;
-
-            transition: .3s;
-        }
-
-        .btn-primary {
-            background: #ffffff;
-            color: #000000;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255,255,255,.15);
-        }
-
-        .btn-outline {
-            border: 1px solid #444;
-            color: #fff;
-        }
-
-        .btn-outline:hover {
-            background: #151515;
-            transform: translateY(-3px);
-        }
-
-        /* GENERAL */
-
-        section {
-            padding: 110px 7%;
-        }
-
-        .section-label {
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 11px;
-            color: #777;
-            margin-bottom: 12px;
-        }
-
-        .section-title {
-            font-size: clamp(35px, 5vw, 60px);
-            line-height: 1;
-            margin-bottom: 55px;
-            letter-spacing: -2px;
-        }
-
-        /* RELEASES */
-
-        .releases {
-            background: #0d0d0d;
-        }
-
-        .release-grid {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 25px;
-        }
-
-        .release-card {
-            position: relative;
-            overflow: hidden;
-
-            min-height: 360px;
-
-            padding: 35px;
-
-            border: 1px solid #222;
-            border-radius: 18px;
-
-            background:
-                linear-gradient(145deg,#171717,#0b0b0b);
-
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
-            transition: .4s;
-        }
-
-        .release-card:hover {
-            transform: translateY(-7px);
-            border-color: #444;
-        }
-
-        .release-number {
-            position: absolute;
-            top: 25px;
-            right: 30px;
-
-            font-size: 12px;
-            color: #666;
-        }
-
-        .release-card h3 {
-            font-size: 36px;
-            margin-bottom: 8px;
-        }
-
-        .release-card p {
-            color: #888;
-            font-size: 13px;
-        }
-
-        .release-link {
-            display: inline-block;
-            margin-top: 20px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        /* FEATURED */
-
-        .featured {
-            display: grid;
-            grid-template-columns: 1.1fr .9fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .featured-art {
-            min-height: 500px;
-
-            border-radius: 20px;
-
-            background:
-                radial-gradient(circle at 50% 35%, rgba(255,255,255,.16), transparent 20%),
-                linear-gradient(145deg,#241c35,#080808);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border: 1px solid #252525;
-        }
-
-        .album-word {
-            font-size: clamp(45px,7vw,90px);
-            font-weight: 900;
-            transform: rotate(-7deg);
-            letter-spacing: -4px;
-        }
-
-        .featured-info h2 {
-            font-size: clamp(40px,6vw,70px);
-            line-height: .95;
-            margin-bottom: 25px;
-        }
-
-        .featured-info p {
-            color: #999;
-            max-width: 500px;
-            margin-bottom: 30px;
-        }
-
-        /* ABOUT */
-
-        .about {
-            background: #0d0d0d;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .about-text {
-            font-size: 20px;
-            color: #aaa;
-        }
-
-        .about-text strong {
-            color: #fff;
-        }
-
-        .about-box {
-            border: 1px solid #252525;
-            border-radius: 20px;
-            padding: 45px;
-            background: #101010;
-        }
-
-        .about-box h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .about-box p {
-            color: #888;
-        }
-
-        /* VIDEO */
-
-        .video-box {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-
-            border-radius: 20px;
-            overflow: hidden;
-
-            border: 1px solid #252525;
-            background: #111;
-        }
-
-        .video-box iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* SOCIAL */
-
-        .social {
-            text-align: center;
-        }
-
-        .social h2 {
-            font-size: clamp(40px,7vw,80px);
-            line-height: .95;
-            margin-bottom: 25px;
-        }
-
-        .social p {
-            color: #888;
-            margin-bottom: 35px;
-        }
-
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        /* FOOTER */
-
-        footer {
-            padding: 45px 7%;
-            border-top: 1px solid #222;
-
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap;
-
-            color: #666;
-            font-size: 12px;
-        }
-
-        /* MOBILE */
-
-        @media(max-width: 800px) {
-
-            nav {
-                padding: 15px 5%;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding: 120px 6% 80px;
-            }
-
-            .hero h1 {
-                letter-spacing: -3px;
-            }
-
-            section {
-                padding: 80px 6%;
-            }
-
-            .release-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .featured {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .featured-art {
-                min-height: 350px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .about-text {
-                font-size: 18px;
-            }
-
-            footer {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website of Aarya Soul Band — original Kannada music, songs, stories and releases by Santhosh S R.">
+  <meta name="theme-color" content="#080808">
+  <title>Aarya Soul Band | Official Website</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #070707;
+      --card: #101010;
+      --text: #f5f5f5;
+      --muted: #a6a6a6;
+      --line: rgba(255,255,255,.12);
+      --accent: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7,7,7,.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      white-space: nowrap;
+    }
+
+    .logo span { color: #888; }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: white; }
+
+    /* HERO */
+    .hero {
+      min-height: calc(100vh - 76px);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 420px;
+      height: 420px;
+      right: -100px;
+      top: 80px;
+      background: rgba(87, 45, 135, .22);
+    }
+
+    .hero::after {
+      width: 330px;
+      height: 330px;
+      left: -100px;
+      bottom: 0;
+      background: rgba(110, 35, 35, .12);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      color: #929292;
+      font-size: 13px;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(55px, 11vw, 125px);
+      line-height: .86;
+      letter-spacing: -6px;
+      max-width: 900px;
+      margin-bottom: 38px;
+    }
+
+    h1 span { color: #777; }
+
+    .hero p {
+      max-width: 650px;
+      color: #b4b4b4;
+      font-size: clamp(18px, 2.2vw, 25px);
+      margin-bottom: 38px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 28px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.28);
+      font-weight: 700;
+      transition: .25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: white;
+    }
+
+    .btn.primary {
+      background: white;
+      color: black;
+      border-color: white;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 105px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-label {
+      color: #777;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(34px, 5vw, 58px);
+      letter-spacing: -2px;
+      margin-bottom: 45px;
+    }
+
+    /* RELEASES */
+    .releases {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .release {
+      background: linear-gradient(145deg, #151515, #0c0c0c);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 30px;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: .25s ease;
+    }
+
+    .release:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,255,255,.3);
+    }
+
+    .release-number {
+      color: #555;
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+
+    .release h3 {
+      font-size: clamp(28px, 4vw, 43px);
+      margin: 25px 0;
+      letter-spacing: -1px;
+    }
+
+    .release p {
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .small-btn {
+      display: inline-block;
+      width: fit-content;
+      border: 1px solid #333;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .small-btn:hover {
+      background: white;
+      color: black;
+    }
+
+    /* FEATURE */
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(28px, 6vw, 65px);
+      background:
+        radial-gradient(circle at 80% 20%, rgba(85,50,130,.24), transparent 35%),
+        linear-gradient(135deg, #151515, #090909);
+    }
+
+    .feature h3 {
+      font-size: clamp(35px, 6vw, 72px);
+      letter-spacing: -3px;
+      margin-bottom: 18px;
+    }
+
+    .feature p {
+      color: #aaa;
+      max-width: 700px;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .about-text {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .about-text p + p { margin-top: 20px; }
+
+    .facts {
+      border-left: 1px solid var(--line);
+      padding-left: 35px;
+    }
+
+    .fact {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .fact span {
+      display: block;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+
+    .fact strong { font-size: 19px; }
+
+    /* SOCIAL */
+    .social-box {
+      text-align: center;
+      padding: 65px 20px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: #0d0d0d;
+    }
+
+    .social-box h2 {
+      font-size: clamp(32px, 6vw, 65px);
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .social-box p {
+      color: #888;
+      margin-bottom: 30px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 35px 0;
+      color: #666;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .container { width: min(100% - 28px, 1120px); }
+
+      .nav { min-height: 68px; }
+      .logo { font-size: 17px; letter-spacing: 3px; }
+      nav { display: none; }
+
+      .hero-content { padding: 75px 0; }
+
+      h1 {
+        letter-spacing: -3px;
+        font-size: clamp(50px, 17vw, 85px);
+      }
+
+      .eyebrow { letter-spacing: 5px; }
+
+      section { padding: 75px 0; }
+
+      .releases,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .facts {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 20px 0 0;
+      }
+
+      .btn { width: 100%; }
+      .buttons { width: 100%; }
+
+      .release { min-height: 210px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo">AARYA <span>SOUL BAND</span></a>
 
-<nav>
-    <a href="#home" class="logo">
-        AARYA <span>SOUL BAND</span>
-    </a>
+      <nav>
+        <a href="#releases">Releases</a>
+        <a href="#about">About</a>
+        <a href="#follow">Follow</a>
+      </nav>
+    </div>
+  </header>
 
-    <ul class="nav-links">
-        <li><a href="#music">Music</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#video">Videos</a></li>
-        <li><a href="#connect">Connect</a></li>
-    </ul>
-</nav>
+  <main>
 
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <div class="small-label">
-            Official Website
-        </div>
+    <!-- HERO -->
+    <section class="hero" id="home" style="border-top:0;">
+      <div class="container hero-content">
+        <div class="eyebrow">Official Website</div>
 
         <h1>
-            AARYA
-            <span>SOUL BAND</span>
+          AARYA<br>
+          SOUL <span>BAND</span>
         </h1>
 
         <p>
-            Music that speaks beyond words.
-            Original Kannada music, emotions and stories
-            from Aarya Soul Band.
+          Music that speaks beyond words.
+          Original Kannada music, emotions and stories from Aarya Soul Band.
         </p>
 
         <div class="buttons">
-
-            <a class="btn btn-primary"
-               href="https://www.youtube.com/@AaryaSoulBand"
-               target="_blank">
-                ▶ Watch on YouTube
-            </a>
-
-            <a class="btn btn-outline"
-               href="https://www.instagram.com/aarya_soul_band/"
-               target="_blank">
-                Instagram
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FEATURED RELEASE -->
-
-<section>
-
-    <div class="section-label">
-        Featured Release
-    </div>
-
-    <div class="featured">
-
-        <div class="featured-art">
-            <div class="album-word">
-                ತೋರೋ<br>ಭಗವಂತ
-            </div>
-        </div>
-
-        <div class="featured-info">
-
-            <div class="section-label">
-                Latest Music
-            </div>
-
-            <h2>
-                ತೋರೋ<br>
-                ಭಗವಂತ
-            </h2>
-
-            <p>
-                A song about life's struggles, questions,
-                justice, hope and the search for answers.
-            </p>
-
-            <a class="btn btn-primary"
-               href="https://www.youtube.com/@AaryaSoulBand"
-               target="_blank">
-                Listen / Watch
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- MUSIC -->
-
-<section class="releases" id="music">
-
-    <div class="section-label">
-        Music
-    </div>
-
-    <h2 class="section-title">
-        Releases
-    </h2>
-
-    <div class="release-grid">
-
-        <div class="release-card">
-
-            <div class="release-number">
-                01
-            </div>
-
-            <h3>
-                ಹೇಳಿಕೊಡು<br>ಓ ದೇವರೆ
-            </h3>
-
-            <p>
-                Aarya Soul Band
-            </p>
-
-            <a class="release-link"
-               href="https://www.youtube.com/@AaryaSoulBand"
-               target="_blank">
-                WATCH RELEASE →
-            </a>
-
-        </div>
-
-
-        <div class="release-card">
-
-            <div class="release-number">
-                02
-            </div>
-
-            <h3>
-                ತೋರೋ<br>ಭಗವಂತ
-            </h3>
-
-            <p>
-                Aarya Soul Band
-            </p>
-
-            <a class="release-link"
-               href="https://www.youtube.com/@AaryaSoulBand"
-               target="_blank">
-                WATCH RELEASE →
-            </a>
-
-        </div>
-
-
-        <div class="release-card">
-
-            <div class="release-number">
-                03
-            </div>
-
-            <h3>
-                ಮನಸು
-            </h3>
-
-            <p>
-                A love & breakup song
-            </p>
-
-            <a class="release-link"
-               href="https://www.youtube.com/@AaryaSoulBand"
-               target="_blank">
-                WATCH RELEASE →
-            </a>
-
-        </div>
-
-
-        <div class="release-card">
-
-            <div class="release-number">
-                04
-            </div>
-
-            <h3>
-                ಲಾಯಕ್ಕು
-            </h3>
-
-            <p>
-                Hip-Hop / Album Song
-            </p>
-
-            <a class="release-link"
-               href="https://www.youtube.com/@AaryaSoulBand"
-               target="_blank">
-                WATCH RELEASE →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="section-label">
-        About
-    </div>
-
-    <div class="about-grid">
-
-        <div class="about-text">
-
-            <p>
-                <strong>Aarya Soul Band</strong> is an independent
-                music identity created around original music,
-                emotions and stories.
-            </p>
-
-            <br>
-
-            <p>
-                From soulful melodies to contemporary
-                Kannada sounds, every song is created
-                to connect with listeners on a deeper level.
-            </p>
-
-        </div>
-
-
-        <div class="about-box">
-
-            <h3>
-                Aarya Soul Band
-            </h3>
-
-            <p>
-                Music Director & Artist
-                <br><br>
-                Santhosh S R
-            </p>
-
-            <br>
-
-            <p>
-                Original Music • Kannada Songs •
-                Independent Releases
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- VIDEO -->
-
-<section id="video">
-
-    <div class="section-label">
-        Watch
-    </div>
-
-    <h2 class="section-title">
-        Latest Videos
-    </h2>
-
-    <div class="video-box">
-
-        <!--
-        Replace the VIDEO_ID below with the ID
-        of your latest YouTube video.
-
-        Example:
-        https://www.youtube.com/watch?v=ABC123
-
-        Video ID = ABC123
-        -->
-
-        <iframe
-            src="https://www.youtube.com/embed?listType=user_uploads&list=AaryaSoulBand"
-            title="Aarya Soul Band YouTube"
-            allowfullscreen>
-        </iframe>
-
-    </div>
-
-</section>
-
-
-<!-- CONNECT -->
-
-<section class="social" id="connect">
-
-    <div class="section-label">
-        Follow
-    </div>
-
-    <h2>
-        Stay Connected.
-    </h2>
-
-    <p>
-        Follow Aarya Soul Band for new music,
-        videos and updates.
-    </p>
-
-    <div class="social-buttons">
-
-        <a class="btn btn-primary"
-           href="https://www.youtube.com/@AaryaSoulBand"
-           target="_blank">
-            YouTube
-        </a>
-
-        <a class="btn btn-outline"
-           href="https://www.instagram.com/aarya_soul_band/"
-           target="_blank">
+          <a class="btn primary"
+             href="https://www.youtube.com/@AaryaSoulBand"
+             target="_blank" rel="noopener">
+            ▶ &nbsp; Watch on YouTube
+          </a>
+
+          <a class="btn"
+             href="https://www.instagram.com/aarya_soul_band/"
+             target="_blank" rel="noopener">
             Instagram
-        </a>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <!-- RELEASES -->
+    <section id="releases">
+      <div class="container">
+        <div class="section-label">Music</div>
+        <h2 class="section-title">Latest Releases</h2>
+
+        <div class="releases">
+
+          <article class="release">
+            <div>
+              <div class="release-number">01 / ORIGINAL</div>
+              <h3>ಹೇಳಿಕೊಡು ಓ ದೇವರೆ</h3>
+              <p>A song of emotion, faith and gratitude.</p>
+            </div>
+            <a class="small-btn"
+               href="https://www.youtube.com/@AaryaSoulBand"
+               target="_blank" rel="noopener">
+              WATCH ON YOUTUBE →
+            </a>
+          </article>
+
+          <article class="release">
+            <div>
+              <div class="release-number">02 / ORIGINAL</div>
+              <h3>ತೋರೋ ಭಗವಂತ</h3>
+              <p>Original Kannada music from Aarya Soul Band.</p>
+            </div>
+            <a class="small-btn"
+               href="https://www.youtube.com/@AaryaSoulBand"
+               target="_blank" rel="noopener">
+              WATCH ON YOUTUBE →
+            </a>
+          </article>
+
+          <article class="release">
+            <div>
+              <div class="release-number">03 / LOVE</div>
+              <h3>ಮನಸು</h3>
+              <p>A Kannada love-breakup song filled with emotion.</p>
+            </div>
+            <a class="small-btn"
+               href="https://www.youtube.com/@AaryaSoulBand"
+               target="_blank" rel="noopener">
+              WATCH ON YOUTUBE →
+            </a>
+          </article>
+
+          <article class="release">
+            <div>
+              <div class="release-number">04 / HIP HOP</div>
+              <h3>ಲಾಯಕ್ಕು</h3>
+              <p>A fresh Kannada hip-hop expression.</p>
+            </div>
+            <a class="small-btn"
+               href="https://www.youtube.com/@AaryaSoulBand"
+               target="_blank" rel="noopener">
+              WATCH ON YOUTUBE →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section>
+      <div class="container">
+        <div class="feature">
+          <div class="section-label">Featured</div>
+          <h3>ಹೇಳಿಕೊಡು ಓ ದೇವರೆ</h3>
+          <p>
+            Experience the music, emotion and message of this original
+            Aarya Soul Band song.
+          </p>
+
+          <a class="btn primary"
+             href="https://www.youtube.com/@AaryaSoulBand"
+             target="_blank" rel="noopener">
+            ▶ &nbsp; Listen / Watch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">The Story</div>
+        <h2 class="section-title">About Aarya Soul Band</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Aarya Soul Band is an independent music identity focused on
+              original Kannada songs, meaningful lyrics and emotional
+              storytelling.
+            </p>
+
+            <p>
+              From devotional expressions to love, life and contemporary
+              sounds, every release is created to connect with listeners
+              beyond language and boundaries.
+            </p>
+
+            <p>
+              Music Director: <strong>Santhosh S R</strong>
+            </p>
+          </div>
+
+          <div class="facts">
+            <div class="fact">
+              <span>Artist</span>
+              <strong>Aarya Soul Band</strong>
+            </div>
+
+            <div class="fact">
+              <span>Music Director</span>
+              <strong>Santhosh S R</strong>
+            </div>
+
+            <div class="fact">
+              <span>Focus</span>
+              <strong>Original Kannada Music</strong>
+            </div>
+
+            <div class="fact">
+              <span>Official Website</span>
+              <strong>aaryasoulband.com</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLLOW -->
+    <section id="follow">
+      <div class="container">
+        <div class="social-box">
+          <div class="section-label">Stay Connected</div>
+          <h2>Follow the Music.</h2>
+          <p>
+            New songs, videos, updates and creative work from Aarya Soul Band.
+          </p>
+
+          <div class="buttons" style="justify-content:center;">
+            <a class="btn primary"
+               href="https://www.youtube.com/@AaryaSoulBand"
+               target="_blank" rel="noopener">
+              ▶ YouTube
+            </a>
+
+            <a class="btn"
+               href="https://www.instagram.com/aarya_soul_band/"
+               target="_blank" rel="noopener">
+              ◎ Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 Aarya Soul Band. All rights reserved.</div>
+      <div>Music • Emotion • Stories</div>
     </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <div>
-        © 2026 Aarya Soul Band
-    </div>
-
-    <div>
-        aaryasoulband.com
-    </div>
-
-    <div>
-        Music • Emotion • Soul
-    </div>
-
-</footer>
-
+  </footer>
 
 </body>
 </html>
