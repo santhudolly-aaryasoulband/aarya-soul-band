@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarya Soul Band | Official Website</title>
-    <meta name="description" content="Official website of Aarya Soul Band. Discover our latest Kannada album songs, music videos, and updates.">
+    <meta name="description" content="Official website of Aarya Soul Band. Stream our top Kannada music releases, original album songs, and official lyrical video clips.">
     <meta name="robots" content="index, follow">
 
     <!-- Google Fonts -->
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- Google AdSense Script (Replace YOUR_CLIENT_ID with your actual AdSense ID) -->
+    <!-- Google AdSense Script (Replace YOUR_CLIENT_ID with your actual publisher ID) -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
 
     <style>
@@ -92,7 +92,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -109,7 +109,7 @@
         .hero p {
             font-size: 1.2rem;
             color: var(--text-muted);
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 1.5rem;
         }
 
@@ -150,7 +150,7 @@
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
@@ -160,12 +160,14 @@
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid #2a2d3d;
+            display: flex;
+            flex-direction: column;
         }
 
         .iframe-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 ratio */
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
         }
 
@@ -180,6 +182,7 @@
 
         .card-content {
             padding: 1.2rem;
+            flex-grow: 1;
         }
 
         .card-content h3 {
@@ -190,6 +193,17 @@
         .card-content p {
             color: var(--text-muted);
             font-size: 0.9rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255, 51, 102, 0.15);
+            color: var(--primary-color);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
         }
 
         /* About Section */
@@ -205,7 +219,7 @@
             color: #d0d0d0;
         }
 
-        /* Contact & Policy Modal / Form */
+        /* Contact Section */
         .contact-section {
             background-color: var(--card-bg);
             padding: 2rem;
@@ -266,8 +280,8 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#music">Music & Videos</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#releases">Top Releases</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -279,18 +293,17 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <h1>Aarya Soul Band</h1>
-            <p>Music from the Soul. Discover original Kannada melodies, emotional album tracks, and soulful compositions.</p>
+            <p>Music from the Soul. Listen to our top original Kannada songs, lyrical releases, and emotional compositions.</p>
             <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener" class="btn">Subscribe on YouTube</a>
         </section>
 
         <!-- Top Ad Unit Placeholder -->
         <div class="ad-container">
             <small style="color: #666; display: block; margin-bottom: 5px;">ADVERTISEMENT</small>
-            <!-- Google AdSense Responsive Ad Unit Code -->
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-YOUR_CLIENT_ID"
-                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID_1"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -298,48 +311,87 @@
             </script>
         </div>
 
-        <!-- Featured Releases -->
-        <section id="music">
-            <h2 class="section-title">Latest Releases</h2>
+        <!-- Featured Popular Releases Grid -->
+        <section id="releases">
+            <h2 class="section-title">Top Music Releases</h2>
             <div class="video-grid">
 
-                <!-- Song 1: Manasu -->
+                <!-- Song 1: Helikodu O Devare -->
                 <article class="video-card">
                     <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/cIj8nhiF--c" title="Manasu - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/Azb--CsL73s" title="Helikodu O Devare - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="card-content">
-                        <h3>ಮನಸು | Manasu</h3>
-                        <p>A original Kannada love melody exploring heartbreak, memories, and unspoken emotion.</p>
+                        <span class="badge">🔥 113K+ Views (Top Hit)</span>
+                        <h3>ಹೇಳಿಕೊಡು ಓ ದೇವರೆ | Helikodu O Devare</h3>
+                        <p>Full album lyrical song exploring spiritual depth, guidance, and soul-stirring melodies.</p>
                     </div>
                 </article>
 
-                <!-- Song 2: Kanasige Banna Hachi -->
+                <!-- Song 2: Devrig Bitte -->
                 <article class="video-card">
                     <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/IfP3P8pf6BU" title="Kanasige Banna Hachi - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/R8i_DL14Vks" title="Devrig Bitte - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="card-content">
-                        <h3>ಕನಸಿಗೆ ಬಣ್ಣ ಹಚ್ಚಿ | Kanasige Banna Hachi</h3>
-                        <p>An inspiring Kannada full album song packed with passion and soul.</p>
+                        <span class="badge">🔥 23K+ Views</span>
+                        <h3>ದೇವ್ರಿಗ್ ಬಿಟ್ಟೆ | Devrig Bitte</h3>
+                        <p>Full lyrical release expressing life, emotion, and heartfelt storytelling.</p>
                     </div>
                 </article>
 
-                <!-- Song 3: Nanna Guru Raaya -->
+                <!-- Song 3: Thoro Bhagavanta -->
                 <article class="video-card">
                     <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/videoseries?list=UU" title="Nanna Guru Raaya - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/yUleHRgLp1g" title="Thoro Bhagavanta - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="card-content">
-                        <h3>ನನ್ನ ಗುರು ರಾಯ | Nanna Guru Raaya</h3>
-                        <p>A devotional soulful track dedicated to spiritual connection and peace.</p>
+                        <span class="badge">✨ New Release</span>
+                        <h3>ತೋರೋ ಭಗವಂತ | Thoro Bhagavanta</h3>
+                        <p>A original Kannada album track with devotional depth and expressive vocals.</p>
+                    </div>
+                </article>
+
+                <!-- Song 4: Appa -->
+                <article class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLo8uoQgbYuoO3iZvK_C3RY-uKaonGNAAp" title="Appa - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <span class="badge">❤️ Fan Favorite (9.7K Views)</span>
+                        <h3>ಅಪ್ಪ | Appa</h3>
+                        <p>A touchingly written song paying tribute to fatherhood and unconditional love.</p>
+                    </div>
+                </article>
+
+                <!-- Song 5: Bandu Sere Nannede Goodali -->
+                <article class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/bDXYfEv4miQ" title="Bandu Sere Nannede Goodali - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <span class="badge">🎵 8.9K Views</span>
+                        <h3>ಬಂದು ಸೆರೆ ನನ್ನೆದೆ ಗೂಡಲ್ಲಿ | Bandu Sere Nannede Goodali</h3>
+                        <p>A romantic lyrical song filled with acoustic warmth and deep feeling.</p>
+                    </div>
+                </article>
+
+                <!-- Song 6: Nanna Baduku -->
+                <article class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLo8uoQgbYuoO3iZvK_C3RY-uKaonGNAAp" title="Nanna Baduku - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <span class="badge">✨ 8.2K Views</span>
+                        <h3>ನನ್ನ ಬದುಕು | Nanna Baduku</h3>
+                        <p>An inspiring single capturing the journey of life, hope, and perseverance.</p>
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- Middle Ad Unit Placeholder -->
+        <!-- Bottom Ad Unit Placeholder -->
         <div class="ad-container">
             <small style="color: #666; display: block; margin-bottom: 5px;">ADVERTISEMENT</small>
             <ins class="adsbygoogle"
@@ -353,17 +405,17 @@
             </script>
         </div>
 
-        <!-- About Section (Required for AdSense High-Quality Content policy) -->
+        <!-- About Section (Required for AdSense High-Quality Content Policy) -->
         <section id="about" class="about-section">
             <h2 class="section-title">About Aarya Soul Band</h2>
-            <p>Welcome to the official hub of <strong>Aarya Soul Band</strong>. We are an independent music project based in Karnataka, crafting original Kannada songs, emotional melodies, and soulful music tracks that resonate deep within the heart.</p>
-            <p>Our journey began with a passion for blending authentic storytelling with modern acoustic sounds. Through our YouTube channel and audio releases across digital streaming platforms like Spotify and Amazon Music, we aim to bring listener-centered musical experiences to Kannada music lovers across the world.</p>
+            <p>Welcome to the official hub of <strong>Aarya Soul Band</strong>. We are an independent music brand based in Bengaluru, Karnataka, producing original Kannada audio tracks, emotional lyrical videos, and acoustic compositions.</p>
+            <p>Our passion lies in blending meaningful lyricism with modern melodies. You can stream our complete catalog on YouTube, Spotify, DistroKid distributions, and major streaming platforms.</p>
         </section>
 
-        <!-- Contact Section (Required for AdSense Verification) -->
+        <!-- Contact Section (Required for AdSense Site Verification) -->
         <section id="contact" class="contact-section">
-            <h2 class="section-title">Get in Touch</h2>
-            <form action="#" method="POST" onsubmit="alert('Thank you for reaching out!'); return false;">
+            <h2 class="section-title">Contact & Inquiries</h2>
+            <form action="#" method="POST" onsubmit="alert('Thank you! Your message has been received.'); return false;">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -374,7 +426,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="For bookings, collaborations, or general inquiries..."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Inquiries for bookings, music collaborations, or licenses..."></textarea>
                 </div>
                 <button type="submit" class="btn">Send Message</button>
             </form>
@@ -382,13 +434,13 @@
 
     </main>
 
-    <!-- Footer (Includes Compliance Links required by AdSense) -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Aarya Soul Band. All Rights Reserved.</p>
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">
             <a href="#privacy">Privacy Policy</a> | 
             <a href="#terms">Terms of Service</a> | 
-            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">YouTube Channel</a>
+            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">Official YouTube</a>
         </p>
     </footer>
 
