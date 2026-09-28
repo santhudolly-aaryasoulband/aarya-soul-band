@@ -1,526 +1,396 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarya Soul Band | Official Website</title>
+    <meta name="description" content="Official website of Aarya Soul Band. Discover our latest Kannada album songs, music videos, and updates.">
+    <meta name="robots" content="index, follow">
 
-  <title>Aarya Soul Band | Official Kannada Music | Santhosh S R</title>
-  <meta name="description" content="Aarya Soul Band — official website of independent Kannada music by Santhosh S R. Explore original Kannada songs including ಹೇಳಿಕೊಡು ಓ ದೇವರೆ, ತೋರೋ ಭಗವಂತ, ಮನಸು and ಲಾಯಕ್ಕು, along with music stories, lyrics, credits and official YouTube releases.">
-  <meta name="keywords" content="Aarya Soul Band, Aarya Soul Band Kannada songs, Santhosh S R, Kannada independent music, Kannada songs, ಹೇಳಿಕೊಡು ಓ ದೇವರೆ, ತೋರೋ ಭಗವಂತ, ಮನಸು, ಲಾಯಕ್ಕು">
-  <meta name="author" content="Santhosh S R / Aarya Soul Band">
-  <meta name="theme-color" content="#050505">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://aaryasoulband.com/">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Aarya Soul Band | Official Website">
-  <meta property="og:description" content="Original Kannada music, emotions and stories from Aarya Soul Band. Music direction by Santhosh S R.">
-  <meta property="og:url" content="https://aaryasoulband.com/">
-  <meta property="og:image" content="https://aaryasoulband.com/aarya-logo.png">
-  <meta property="og:site_name" content="Aarya Soul Band">
+    <!-- Google AdSense Script (Replace YOUR_CLIENT_ID with your actual AdSense ID) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Aarya Soul Band | Official Website">
-  <meta name="twitter:description" content="Original Kannada music, emotions and stories from Aarya Soul Band.">
-  <meta name="twitter:image" content="https://aaryasoulband.com/aarya-logo.png">
+    <style>
+        :root {
+            --bg-color: #0f1117;
+            --card-bg: #1a1d26;
+            --primary-color: #ff3366;
+            --text-color: #f0f0f0;
+            --text-muted: #a0a0a0;
+            --nav-bg: #141720;
+        }
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"MusicGroup",
-    "name":"Aarya Soul Band",
-    "url":"https://aaryasoulband.com/",
-    "sameAs":[
-      "https://www.youtube.com/@AaryaSoulBand",
-      "https://www.instagram.com/aarya_soul_band/"
-    ],
-    "founder":{
-      "@type":"Person",
-      "name":"Santhosh S R"
-    },
-    "genre":[
-      "Kannada music",
-      "Independent music",
-      "Devotional music",
-      "Kannada pop",
-      "Hip hop"
-    ]
-  }
-  </script>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      background:#050505;color:#f5f2ec;
-      font-family:Arial,Helvetica,sans-serif;
-      line-height:1.65;overflow-x:hidden
-    }
-    a{text-decoration:none;color:inherit}
-    img{display:block;max-width:100%}
-    .container{width:min(1160px,calc(100% - 32px));margin:auto}
-    header{
-      position:sticky;top:0;z-index:50;
-      background:rgba(5,5,5,.88);
-      backdrop-filter:blur(16px);
-      border-bottom:1px solid rgba(255,255,255,.1)
-    }
-    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .logo-text{font-weight:800;letter-spacing:4px;font-size:18px}
-    .logo-text span{color:#777}
-    nav{display:flex;gap:24px;font-size:13px;color:#aaa;flex-wrap:wrap}
-    nav a:hover{color:#fff}
-    .hero{
-      min-height:calc(100vh - 72px);
-      display:grid;grid-template-columns:1.05fr .95fr;
-      align-items:center;gap:50px;padding:60px 0 80px;
-      position:relative
-    }
-    .hero:before{
-      content:"";position:absolute;inset:0;
-      background:
-        radial-gradient(circle at 75% 35%,rgba(109,70,35,.20),transparent 34%),
-        radial-gradient(circle at 20% 80%,rgba(83,35,35,.12),transparent 32%);
-      pointer-events:none
-    }
-    .hero-copy,.hero-art{position:relative;z-index:1}
-    .eyebrow,.label{
-      font-size:11px;letter-spacing:5px;color:#777;
-      text-transform:uppercase;margin-bottom:12px
-    }
-    h1{
-      font-size:clamp(52px,8vw,105px);
-      line-height:.86;letter-spacing:-5px;margin-bottom:28px
-    }
-    h1 span{color:#777}
-    .hero-copy>p{
-      max-width:690px;color:#aaa;
-      font-size:clamp(17px,2vw,22px);margin-bottom:30px
-    }
-    .buttons{display:flex;flex-wrap:wrap;gap:12px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      min-height:50px;padding:0 23px;border:1px solid #3b3b3b;
-      border-radius:999px;font-weight:700;font-size:14px;transition:.25s
-    }
-    .btn:hover{transform:translateY(-2px);border-color:#aaa}
-    .btn.primary{background:#f4f1eb;color:#050505;border-color:#f4f1eb}
-    .hero-art{
-      justify-self:end;width:min(470px,100%);
-      border-radius:28px;overflow:hidden;
-      border:1px solid rgba(255,255,255,.14);
-      box-shadow:0 30px 80px rgba(0,0,0,.6)
-    }
-    .hero-art img{width:100%;aspect-ratio:1/1;object-fit:cover}
-    section{padding:95px 0;border-top:1px solid rgba(255,255,255,.09)}
-    .title{font-size:clamp(36px,5vw,62px);letter-spacing:-2.5px;margin-bottom:38px}
-    .intro{
-      max-width:850px;color:#aaa;font-size:17px;margin-bottom:32px
-    }
-    .releases{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .release{
-      background:#0c0c0c;border:1px solid rgba(255,255,255,.11);
-      border-radius:24px;overflow:hidden;transition:.25s
-    }
-    .release:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.3)}
-    .cover{aspect-ratio:1/1;overflow:hidden;background:#111}
-    .cover img{width:100%;height:100%;object-fit:cover;transition:.5s}
-    .release:hover .cover img{transform:scale(1.025)}
-    .release-info{padding:24px}
-    .release-number{font-size:10px;letter-spacing:3px;color:#666}
-    .release h3{font-size:clamp(25px,3vw,38px);margin:10px 0 7px;letter-spacing:-1px}
-    .release p{color:#aaa;font-size:14px;margin-bottom:15px}
-    .release .details{color:#777;font-size:13px;margin-bottom:18px}
-    .small{
-      display:inline-flex;padding:9px 15px;border:1px solid #343434;
-      border-radius:999px;font-size:12px;font-weight:700
-    }
-    .small:hover{background:#eee;color:#050505}
-    .feature{display:grid;grid-template-columns:1fr 1.1fr;gap:45px;align-items:center}
-    .feature-image{border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
-    .feature-image img{width:100%;aspect-ratio:1/1;object-fit:cover}
-    .feature h3{font-size:clamp(36px,5vw,70px);line-height:1;letter-spacing:-3px;margin:12px 0 18px}
-    .feature p{color:#aaa;font-size:17px;max-width:650px;margin-bottom:18px}
-    .story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .story{
-      background:#0b0b0b;border:1px solid #202020;
-      border-radius:22px;padding:27px
-    }
-    .story h3{font-size:22px;margin:8px 0 12px}
-    .story p{color:#999;font-size:14px}
-    .about{display:grid;grid-template-columns:1.15fr .85fr;gap:60px}
-    .about p{color:#aaa;font-size:17px;margin-bottom:18px}
-    .facts{border-left:1px solid #222;padding-left:30px}
-    .fact{padding:17px 0;border-bottom:1px solid #222}
-    .fact small{
-      display:block;color:#666;text-transform:uppercase;
-      letter-spacing:3px;font-size:10px;margin-bottom:4px
-    }
-    .fact strong{font-size:17px}
-    .youtube-box{
-      background:#0b0b0b;border:1px solid #222;border-radius:26px;
-      padding:45px;display:grid;grid-template-columns:1.2fr .8fr;
-      gap:35px;align-items:center
-    }
-    .youtube-box h2{font-size:clamp(35px,5vw,60px);letter-spacing:-2px;line-height:1}
-    .youtube-box p{color:#999;margin:15px 0 24px}
-    .yt-card{
-      border:1px solid #282828;border-radius:20px;padding:25px;
-      background:linear-gradient(145deg,#111,#080808)
-    }
-    .yt-handle{font-size:22px;font-weight:800;margin-bottom:8px}
-    .yt-note{font-size:13px;color:#777;margin-bottom:18px}
-    .connect{
-      text-align:center;border:1px solid #222;border-radius:26px;
-      padding:60px 20px;
-      background:radial-gradient(circle at 50% 0,rgba(100,65,35,.16),transparent 48%),#0b0b0b
-    }
-    .connect h2{font-size:clamp(35px,6vw,65px);letter-spacing:-2px;margin-bottom:10px}
-    .connect p{color:#888;margin-bottom:25px}
-    .connect .buttons{justify-content:center}
-    .notice{
-      margin-top:28px;padding:18px 20px;border:1px solid #202020;
-      border-radius:16px;color:#777;font-size:13px;background:#080808
-    }
-    footer{border-top:1px solid #181818;padding:30px 0;color:#666;font-size:12px}
-    .footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    @media(max-width:900px){
-      .story-grid{grid-template-columns:1fr 1fr}
-      .youtube-box{grid-template-columns:1fr}
-    }
-    @media(max-width:780px){
-      .container{width:min(100% - 24px,1160px)}
-      .nav{min-height:64px}.logo-text{font-size:15px;letter-spacing:3px}
-      nav{display:none}
-      .hero{min-height:auto;grid-template-columns:1fr;gap:32px;padding:48px 0 65px}
-      .hero-art{justify-self:center;width:min(430px,100%)}
-      h1{font-size:clamp(51px,16vw,82px);letter-spacing:-3.5px}
-      .hero-copy>p{font-size:17px}
-      .btn{flex:1;min-width:145px}
-      section{padding:70px 0}
-      .releases,.story-grid{grid-template-columns:1fr}
-      .release-info{padding:20px}
-      .feature,.about{grid-template-columns:1fr;gap:28px}
-      .facts{border-left:0;border-top:1px solid #222;padding:15px 0 0}
-      .youtube-box{padding:30px 22px}
-    }
-  </style>
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0584395743022557"
-     crossorigin="anonymous"></script>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            background-color: var(--nav-bg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #2a2d3d;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 5rem 1rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e02855;
+        }
+
+        /* Ad Banner Section */
+        .ad-container {
+            width: 100%;
+            margin: 2rem 0;
+            text-align: center;
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px dashed #333;
+        }
+
+        /* Video / Music Grid */
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .video-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2a2d3d;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .card-content {
+            padding: 1.2rem;
+        }
+
+        .card-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1rem;
+            color: #d0d0d0;
+        }
+
+        /* Contact & Policy Modal / Form */
+        .contact-section {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background-color: #0f1117;
+            color: white;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: var(--nav-bg);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: var(--text-muted);
+            border-top: 1px solid #2a2d3d;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<header>
-  <div class="container nav">
-    <a class="logo-text" href="#home" aria-label="Aarya Soul Band home">AARYA <span>SOUL BAND</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#releases">Releases</a>
-      <a href="#stories">Music Stories</a>
-      <a href="#about">About</a>
-      <a href="#youtube">YouTube</a>
-      <a href="#follow">Follow</a>
-    </nav>
-  </div>
-</header>
 
-<main>
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Aarya Soul Band</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#music">Music & Videos</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero" id="home" style="border-top:0">
-    <div class="container" style="display:contents">
-      <div class="hero-copy">
-        <div class="eyebrow">Official Music Website</div>
-        <h1>AARYA<br>SOUL <span>BAND</span></h1>
-        <p>
-          Aarya Soul Band is an independent Kannada music identity creating original
-          songs around devotion, faith, love, life, emotion and contemporary sounds.
-          The project is led by Music Director <strong>Santhosh S R</strong>.
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1>Aarya Soul Band</h1>
+            <p>Music from the Soul. Discover original Kannada melodies, emotional album tracks, and soulful compositions.</p>
+            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener" class="btn">Subscribe on YouTube</a>
+        </section>
+
+        <!-- Top Ad Unit Placeholder -->
+        <div class="ad-container">
+            <small style="color: #666; display: block; margin-bottom: 5px;">ADVERTISEMENT</small>
+            <!-- Google AdSense Responsive Ad Unit Code -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_CLIENT_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Featured Releases -->
+        <section id="music">
+            <h2 class="section-title">Latest Releases</h2>
+            <div class="video-grid">
+
+                <!-- Song 1: Manasu -->
+                <article class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/cIj8nhiF--c" title="Manasu - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h3>ಮನಸು | Manasu</h3>
+                        <p>A original Kannada love melody exploring heartbreak, memories, and unspoken emotion.</p>
+                    </div>
+                </article>
+
+                <!-- Song 2: Kanasige Banna Hachi -->
+                <article class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/IfP3P8pf6BU" title="Kanasige Banna Hachi - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h3>ಕನಸಿಗೆ ಬಣ್ಣ ಹಚ್ಚಿ | Kanasige Banna Hachi</h3>
+                        <p>An inspiring Kannada full album song packed with passion and soul.</p>
+                    </div>
+                </article>
+
+                <!-- Song 3: Nanna Guru Raaya -->
+                <article class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=UU" title="Nanna Guru Raaya - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h3>ನನ್ನ ಗುರು ರಾಯ | Nanna Guru Raaya</h3>
+                        <p>A devotional soulful track dedicated to spiritual connection and peace.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Middle Ad Unit Placeholder -->
+        <div class="ad-container">
+            <small style="color: #666; display: block; margin-bottom: 5px;">ADVERTISEMENT</small>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_CLIENT_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID_2"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- About Section (Required for AdSense High-Quality Content policy) -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Aarya Soul Band</h2>
+            <p>Welcome to the official hub of <strong>Aarya Soul Band</strong>. We are an independent music project based in Karnataka, crafting original Kannada songs, emotional melodies, and soulful music tracks that resonate deep within the heart.</p>
+            <p>Our journey began with a passion for blending authentic storytelling with modern acoustic sounds. Through our YouTube channel and audio releases across digital streaming platforms like Spotify and Amazon Music, we aim to bring listener-centered musical experiences to Kannada music lovers across the world.</p>
+        </section>
+
+        <!-- Contact Section (Required for AdSense Verification) -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <form action="#" method="POST" onsubmit="alert('Thank you for reaching out!'); return false;">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="For bookings, collaborations, or general inquiries..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer (Includes Compliance Links required by AdSense) -->
+    <footer>
+        <p>&copy; 2026 Aarya Soul Band. All Rights Reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a> | 
+            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">YouTube Channel</a>
         </p>
-        <div class="buttons">
-          <a class="btn primary" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">▶ &nbsp; Visit YouTube</a>
-          <a class="btn" href="https://www.instagram.com/aarya_soul_band/" target="_blank" rel="noopener">◎ &nbsp; Instagram</a>
-        </div>
-      </div>
-
-      <div class="hero-art">
-        <img src="aarya-logo.png" alt="Aarya Soul Band official logo">
-      </div>
-    </div>
-  </section>
-
-  <section id="releases">
-    <div class="container">
-      <div class="label">Original Music</div>
-      <h2 class="title">Latest Releases</h2>
-
-      <p class="intro">
-        Explore the Aarya Soul Band catalogue through original Kannada songs that move
-        between devotion, introspection, love, contemporary expression and hip-hop.
-        The release cards below connect directly to the official Aarya Soul Band
-        YouTube channel, where the songs and videos are published.
-      </p>
-
-      <div class="releases">
-
-        <article class="release">
-          <div class="cover">
-            <img src="helikodu-o-devare.jpg" alt="ಹೇಳಿಕೊಡು ಓ ದೇವರೆ cover art">
-          </div>
-          <div class="release-info">
-            <div class="release-number">01 / DEVOTIONAL • KANNADA</div>
-            <h3>ಹೇಳಿಕೊಡು ಓ ದೇವರೆ</h3>
-            <p>
-              A devotional and emotional Kannada song built around questions,
-              faith, life and a heartfelt search for answers from God.
-            </p>
-            <div class="details">
-              The song is presented as an original Aarya Soul Band release with
-              its lyrical message at the centre of the listening experience.
-            </div>
-            <a class="small" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">WATCH / LISTEN →</a>
-          </div>
-        </article>
-
-        <article class="release">
-          <div class="cover">
-            <img src="thoro-bhagavanta.png" alt="ತೋರೋ ಭಗವಂತ cover art">
-          </div>
-          <div class="release-info">
-            <div class="release-number">02 / ORIGINAL • KANNADA</div>
-            <h3>ತೋರೋ ಭಗವಂತ</h3>
-            <p>
-              A Kannada devotional expression that turns toward the divine while
-              asking for direction, understanding and a way forward.
-            </p>
-            <div class="details">
-              The song belongs to Aarya Soul Band's emotionally driven original
-              Kannada music catalogue.
-            </div>
-            <a class="small" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">WATCH / LISTEN →</a>
-          </div>
-        </article>
-
-        <article class="release">
-          <div class="cover">
-            <img src="manasu.png" alt="ಮನಸು cover art">
-          </div>
-          <div class="release-info">
-            <div class="release-number">03 / LOVE • KANNADA</div>
-            <h3>ಮನಸು</h3>
-            <p>
-              An emotional Kannada love song exploring the vulnerability of giving
-              the heart, longing, separation and the pain that follows.
-            </p>
-            <div class="details">
-              The song represents the romantic and emotional side of Aarya Soul
-              Band's independent music.
-            </div>
-            <a class="small" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">WATCH / LISTEN →</a>
-          </div>
-        </article>
-
-        <article class="release">
-          <div class="cover">
-            <img src="layakku.png" alt="ಲಾಯಕ್ಕು cover art">
-          </div>
-          <div class="release-info">
-            <div class="release-number">04 / HIP-HOP • KANNADA</div>
-            <h3>ಲಾಯಕ್ಕು</h3>
-            <p>
-              A contemporary Kannada hip-hop expression with a direct, energetic
-              attitude and a modern independent-music character.
-            </p>
-            <div class="details">
-              This release shows the band's interest in moving beyond a single
-              musical style while retaining Kannada language and identity.
-            </div>
-            <a class="small" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">WATCH / LISTEN →</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="feature">
-        <div class="feature-image">
-          <img src="helikodu-o-devare.jpg" alt="ಹೇಳಿಕೊಡು ಓ ದೇವರೆ — Aarya Soul Band">
-        </div>
-        <div>
-          <div class="label">Featured Release</div>
-          <h3>ಹೇಳಿಕೊಡು<br>ಓ ದೇವರೆ</h3>
-          <p>
-            “ಹೇಳಿಕೊಡು ಓ ದೇವರೆ” is presented as a deeply emotional Kannada devotional
-            song. Its central feeling is a conversation with God — asking for
-            understanding, guidance and the strength to continue through difficult
-            moments. The song brings together the spiritual and human sides of
-            Aarya Soul Band's songwriting.
-          </p>
-          <p>
-            The official release, lyrical video and related updates are available
-            through the Aarya Soul Band YouTube channel.
-          </p>
-          <a class="btn primary" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">▶ &nbsp; Watch the Official Channel</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="stories">
-    <div class="container">
-      <div class="label">Behind The Music</div>
-      <h2 class="title">Music, Emotion &amp; Stories</h2>
-
-      <p class="intro">
-        Aarya Soul Band is not limited to one sound. The catalogue explores
-        devotional feeling, personal emotion, romantic storytelling and contemporary
-        Kannada expression. This website is intended to give listeners context
-        around the music rather than simply displaying artwork and external links.
-      </p>
-
-      <div class="story-grid">
-        <article class="story">
-          <div class="release-number">01 / DEVOTION</div>
-          <h3>Music with a spiritual voice</h3>
-          <p>
-            Songs such as “ಹೇಳಿಕೊಡು ಓ ದೇವರೆ” use the language of prayer and personal
-            struggle to create a direct emotional connection between the singer,
-            the listener and the divine.
-          </p>
-        </article>
-
-        <article class="story">
-          <div class="release-number">02 / EMOTION</div>
-          <h3>Stories from real feelings</h3>
-          <p>
-            Love, separation, longing, disappointment and hope are recurring human
-            emotions explored through Kannada lyrics and melody.
-          </p>
-        </article>
-
-        <article class="story">
-          <div class="release-number">03 / SOUND</div>
-          <h3>Kannada music in different styles</h3>
-          <p>
-            From devotional compositions to love songs and hip-hop, Aarya Soul Band
-            uses different musical approaches while keeping Kannada storytelling
-            at the heart of the work.
-          </p>
-        </article>
-      </div>
-
-      <div class="notice">
-        <strong>About this website:</strong>
-        This is the official online home for Aarya Soul Band. Song information,
-        artwork, credits and future release details should be expanded here as
-        each new original work is published.
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="label">The Artist</div>
-      <h2 class="title">About Aarya Soul Band</h2>
-
-      <div class="about">
-        <div>
-          <p>
-            <strong>Aarya Soul Band</strong> is an independent Kannada music identity
-            focused on original songs, meaningful lyrics, emotional storytelling
-            and musical experimentation.
-          </p>
-
-          <p>
-            The catalogue moves across devotional and spiritual themes, love and
-            heartbreak, life experiences and contemporary Kannada sounds. The aim
-            is to create songs that communicate an emotion clearly and connect with
-            listeners beyond a single genre.
-          </p>
-
-          <p>
-            <strong>Santhosh S R</strong> is the Music Director associated with
-            Aarya Soul Band. The project brings together songwriting, music
-            direction, vocal performance, production ideas and visual storytelling
-            around independent Kannada music releases.
-          </p>
-
-          <p>
-            The official YouTube channel <strong>@AaryaSoulBand</strong> is the
-            primary video destination for the band's songs, lyrical videos,
-            music releases and future creative work.
-          </p>
-        </div>
-
-        <div class="facts">
-          <div class="fact"><small>Artist</small><strong>Aarya Soul Band</strong></div>
-          <div class="fact"><small>Music Director</small><strong>Santhosh S R</strong></div>
-          <div class="fact"><small>Primary Language</small><strong>Kannada</strong></div>
-          <div class="fact"><small>Music Focus</small><strong>Original Independent Music</strong></div>
-          <div class="fact"><small>Official YouTube</small><strong>@AaryaSoulBand</strong></div>
-          <div class="fact"><small>Official Website</small><strong>aaryasoulband.com</strong></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="youtube">
-    <div class="container">
-      <div class="youtube-box">
-        <div>
-          <div class="label">Official Video Channel</div>
-          <h2>Watch Aarya Soul Band on YouTube.</h2>
-          <p>
-            Find the band's original Kannada songs, lyrical videos, music releases,
-            visual content and new uploads on the official YouTube channel.
-          </p>
-          <div class="buttons">
-            <a class="btn primary" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">▶ Open @AaryaSoulBand</a>
-            <a class="btn" href="https://www.youtube.com/@AaryaSoulBand/videos" target="_blank" rel="noopener">View Videos</a>
-          </div>
-        </div>
-
-        <div class="yt-card">
-          <div class="yt-handle">@AaryaSoulBand</div>
-          <div class="yt-note">
-            Official Aarya Soul Band YouTube channel
-          </div>
-          <p>
-            The channel is the official video home for Aarya Soul Band's Kannada
-            music and releases. Use the channel link to see the current catalogue
-            and latest uploads.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="follow">
-    <div class="container">
-      <div class="connect">
-        <div class="label">Official Channels</div>
-        <h2>Follow the Music.</h2>
-        <p>
-          Stay connected for new songs, lyrical videos, music updates and creative
-          work from Aarya Soul Band.
-        </p>
-        <div class="buttons">
-          <a class="btn primary" href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">▶ YouTube</a>
-          <a class="btn" href="https://www.instagram.com/aarya_soul_band/" target="_blank" rel="noopener">◎ Instagram</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="container footer">
-    <div>© 2026 Aarya Soul Band. All rights reserved.</div>
-    <div>Original Kannada Music • Music • Emotions • Stories</div>
-  </div>
-</footer>
+    </footer>
 
 </body>
 </html>
