@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarya Soul Band | Official Website</title>
-    <meta name="description" content="Official website of Aarya Soul Band. Stream our top Kannada music releases, original album songs, and official lyrical video clips.">
+    <title>Aarya Soul Band | Original Kannada Songs & Music Composition</title>
+    <meta name="description" content="Official website of Aarya Soul Band. Composing original Kannada songs, writing heart-touching lyrics, and creating hit independent tracks.">
     <meta name="robots" content="index, follow">
 
     <!-- Google Fonts -->
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- Google AdSense Script (Replace YOUR_CLIENT_ID with your actual publisher ID) -->
+    <!-- Google AdSense Script (Replace YOUR_CLIENT_ID after fixing review) -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
 
     <style>
@@ -35,7 +35,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         h1, h2, h3, h4 {
@@ -92,7 +92,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -109,7 +109,7 @@
         .hero p {
             font-size: 1.2rem;
             color: var(--text-muted);
-            max-width: 650px;
+            max-width: 700px;
             margin: 0 auto 1.5rem;
         }
 
@@ -134,12 +134,12 @@
             margin: 2rem 0;
             text-align: center;
             background: var(--card-bg);
-            padding: 1rem;
+            padding: 1.5rem;
             border-radius: 8px;
             border: 1px dashed #333;
         }
 
-        /* Video / Music Grid */
+        /* Section Styling */
         .section-title {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
@@ -148,9 +148,34 @@
             padding-bottom: 0.3rem;
         }
 
+        /* About Composer Section */
+        .about-composer {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .about-composer p {
+            margin-bottom: 1rem;
+            color: #d0d0d0;
+            font-size: 1.05rem;
+        }
+
+        .about-composer ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .about-composer li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Video Grid */
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
@@ -186,13 +211,14 @@
         }
 
         .card-content h3 {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             margin-bottom: 0.5rem;
         }
 
         .card-content p {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
         }
 
         .badge {
@@ -201,22 +227,19 @@
             color: var(--primary-color);
             font-size: 0.75rem;
             font-weight: 600;
-            padding: 0.2rem 0.6rem;
+            padding: 0.25rem 0.6rem;
             border-radius: 12px;
             margin-bottom: 0.5rem;
         }
 
-        /* About Section */
-        .about-section {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-        }
-
-        .about-section p {
-            margin-bottom: 1rem;
-            color: #d0d0d0;
+        /* Article Content Box - Needed to pass AdSense Low Value Policy */
+        .song-article {
+            background-color: #141720;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #b0b0b0;
         }
 
         /* Contact Section */
@@ -280,8 +303,8 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
                     <li><a href="#releases">Top Releases</a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -293,8 +316,20 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <h1>Aarya Soul Band</h1>
-            <p>Music from the Soul. Listen to our top original Kannada songs, lyrical releases, and emotional compositions.</p>
+            <p>Original Music Composition, Penning Soulful Lyrics, & Creating Independent Kannada Hits.</p>
             <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener" class="btn">Subscribe on YouTube</a>
+        </section>
+
+        <!-- About Me Section (Solves Thin/Low Value Content for AdSense) -->
+        <section id="about-me" class="about-composer">
+            <h2 class="section-title">About My Work & Craft</h2>
+            <p>Welcome to <strong>Aarya Soul Band</strong>. As an independent composer, lyricist, and producer, I dedicate my passion to crafting original Kannada melodies that touch emotions and resonate deeply with listeners.</p>
+            <p>In today's Kannada independent music scene, creating high-quality original content requires distinct songwriting, meaningful lyric writing, and meticulous musical arrangements. My mission is to give genuine hit tracks to the independent Kannada artist space.</p>
+            <ul>
+                <li><strong>Original Music Composition:</strong> Writing acoustic, emotional, and devotional melodies built from the ground up.</li>
+                <li><strong>Lyric Writing:</strong> Penning authentic Kannada lyrics that express real life, love, relationships, and devotion.</li>
+                <li><strong>Independent Hits:</strong> Delivering popular hits like <em>Helikodu O Devare</em> (113K+ views) and <em>Devrig Bitte</em> (23K+ views).</li>
+            </ul>
         </section>
 
         <!-- Top Ad Unit Placeholder -->
@@ -313,7 +348,7 @@
 
         <!-- Featured Popular Releases Grid -->
         <section id="releases">
-            <h2 class="section-title">Top Music Releases</h2>
+            <h2 class="section-title">Top Originals & Featured Songs</h2>
             <div class="video-grid">
 
                 <!-- Song 1: Helikodu O Devare -->
@@ -324,7 +359,10 @@
                     <div class="card-content">
                         <span class="badge">🔥 113K+ Views (Top Hit)</span>
                         <h3>ಹೇಳಿಕೊಡು ಓ ದೇವರೆ | Helikodu O Devare</h3>
-                        <p>Full album lyrical song exploring spiritual depth, guidance, and soul-stirring melodies.</p>
+                        <p>An original Kannada composition exploring spiritual surrender and guidance.</p>
+                        <div class="song-article">
+                            <strong>About this track:</strong> Composed and written as a deep emotional plea for divine guidance. The melody blends traditional Kannada lyrical style with modern acoustic arrangements.
+                        </div>
                     </div>
                 </article>
 
@@ -336,7 +374,10 @@
                     <div class="card-content">
                         <span class="badge">🔥 23K+ Views</span>
                         <h3>ದೇವ್ರಿಗ್ ಬಿಟ್ಟೆ | Devrig Bitte</h3>
-                        <p>Full lyrical release expressing life, emotion, and heartfelt storytelling.</p>
+                        <p>A hit lyrical release capturing real life emotions and acceptance.</p>
+                        <div class="song-article">
+                            <strong>About this track:</strong> Written to express the feeling of letting go and trusting destiny. One of our most appreciated independent hits across social platforms.
+                        </div>
                     </div>
                 </article>
 
@@ -346,9 +387,12 @@
                         <iframe src="https://www.youtube.com/embed/yUleHRgLp1g" title="Thoro Bhagavanta - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="card-content">
-                        <span class="badge">✨ New Release</span>
+                        <span class="badge">✨ Devotional Single</span>
                         <h3>ತೋರೋ ಭಗವಂತ | Thoro Bhagavanta</h3>
-                        <p>A original Kannada album track with devotional depth and expressive vocals.</p>
+                        <p>A devotional song filled with vocal expression and acoustic depth.</p>
+                        <div class="song-article">
+                            <strong>About this track:</strong> Features spiritual lyrics written to bring inner peace and reflection through pure music arrangements.
+                        </div>
                     </div>
                 </article>
 
@@ -358,33 +402,12 @@
                         <iframe src="https://www.youtube.com/embed/videoseries?list=PLo8uoQgbYuoO3iZvK_C3RY-uKaonGNAAp" title="Appa - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="card-content">
-                        <span class="badge">❤️ Fan Favorite (9.7K Views)</span>
+                        <span class="badge">❤️ Fan Favorite</span>
                         <h3>ಅಪ್ಪ | Appa</h3>
-                        <p>A touchingly written song paying tribute to fatherhood and unconditional love.</p>
-                    </div>
-                </article>
-
-                <!-- Song 5: Bandu Sere Nannede Goodali -->
-                <article class="video-card">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/bDXYfEv4miQ" title="Bandu Sere Nannede Goodali - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <span class="badge">🎵 8.9K Views</span>
-                        <h3>ಬಂದು ಸೆರೆ ನನ್ನೆದೆ ಗೂಡಲ್ಲಿ | Bandu Sere Nannede Goodali</h3>
-                        <p>A romantic lyrical song filled with acoustic warmth and deep feeling.</p>
-                    </div>
-                </article>
-
-                <!-- Song 6: Nanna Baduku -->
-                <article class="video-card">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLo8uoQgbYuoO3iZvK_C3RY-uKaonGNAAp" title="Nanna Baduku - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <span class="badge">✨ 8.2K Views</span>
-                        <h3>ನನ್ನ ಬದುಕು | Nanna Baduku</h3>
-                        <p>An inspiring single capturing the journey of life, hope, and perseverance.</p>
+                        <p>A dedicated song honoring fatherhood and silent sacrifices.</p>
+                        <div class="song-article">
+                            <strong>About this track:</strong> Penned with deeply emotional words to pay tribute to fathers everywhere. Highly loved by the Kannada audience.
+                        </div>
                     </div>
                 </article>
 
@@ -405,16 +428,9 @@
             </script>
         </div>
 
-        <!-- About Section (Required for AdSense High-Quality Content Policy) -->
-        <section id="about" class="about-section">
-            <h2 class="section-title">About Aarya Soul Band</h2>
-            <p>Welcome to the official hub of <strong>Aarya Soul Band</strong>. We are an independent music brand based in Bengaluru, Karnataka, producing original Kannada audio tracks, emotional lyrical videos, and acoustic compositions.</p>
-            <p>Our passion lies in blending meaningful lyricism with modern melodies. You can stream our complete catalog on YouTube, Spotify, DistroKid distributions, and major streaming platforms.</p>
-        </section>
-
         <!-- Contact Section (Required for AdSense Site Verification) -->
         <section id="contact" class="contact-section">
-            <h2 class="section-title">Contact & Inquiries</h2>
+            <h2 class="section-title">Contact & Collaborations</h2>
             <form action="#" method="POST" onsubmit="alert('Thank you! Your message has been received.'); return false;">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -426,7 +442,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Inquiries for bookings, music collaborations, or licenses..."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Inquiries for song composition, lyrics writing, or music production..."></textarea>
                 </div>
                 <button type="submit" class="btn">Send Message</button>
             </form>
@@ -440,7 +456,7 @@
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">
             <a href="#privacy">Privacy Policy</a> | 
             <a href="#terms">Terms of Service</a> | 
-            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">Official YouTube</a>
+            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">Official YouTube Channel</a>
         </p>
     </footer>
 
