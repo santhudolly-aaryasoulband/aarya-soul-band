@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarya Soul Band | Original Kannada Songs & Music Composition</title>
-    <meta name="description" content="Official website of Aarya Soul Band. Composing original Kannada songs, writing heart-touching lyrics, and creating hit independent tracks.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Google Fonts -->
+    <title>Aarya Soul Band | Official Web Portal & Independent Kannada Music</title>
+    <meta name="description" content="Official website of Aarya Soul Band - Independent Kannada music production, song releases, lyric breakdowns, behind-the-scenes engineering, and cultural compositions.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- Google AdSense Script (Replace YOUR_CLIENT_ID after fixing review) -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f1117;
-            --card-bg: #1a1d26;
-            --primary-color: #ff3366;
-            --text-color: #f0f0f0;
-            --text-muted: #a0a0a0;
-            --nav-bg: #141720;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #f59e0b;
+            --accent-hover: #d97706;
+            --border-color: #334155;
         }
 
         * {
@@ -32,255 +26,184 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
-            color: var(--text-color);
+            color: var(--text-main);
             line-height: 1.7;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Montserrat', sans-serif;
+            padding: 0;
         }
 
         header {
-            background-color: var(--nav-bg);
+            background-color: #020617;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid #2a2d3d;
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
         }
 
         .logo {
+            font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
+            color: var(--accent);
             text-decoration: none;
-            letter-spacing: 1px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 1.5rem;
+            font-weight: 700;
         }
 
         nav a {
-            color: var(--text-color);
+            color: var(--text-main);
             text-decoration: none;
+            margin-left: 1.5rem;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
 
         nav a:hover {
-            color: var(--primary-color);
+            color: var(--accent);
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
 
-        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 5rem 1rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid var(--border-color);
             border-radius: 12px;
-            margin-bottom: 2.5rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
         .hero h1 {
-            font-size: 2.8rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
             margin-bottom: 1rem;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto 1.5rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
 
         .btn {
             display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 30px;
+            background-color: var(--accent);
+            color: #000;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: background 0.3s;
+            transition: background 0.2s;
         }
 
         .btn:hover {
-            background-color: #e02855;
+            background-color: var(--accent-hover);
         }
 
-        /* Ad Banner Section */
-        .ad-container {
-            width: 100%;
-            margin: 2rem 0;
-            text-align: center;
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px dashed #333;
+        .btn-outline {
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
         }
 
-        /* Section Styling */
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
         .section-title {
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 2px solid var(--accent);
             display: inline-block;
             padding-bottom: 0.3rem;
         }
 
-        /* About Composer Section */
-        .about-composer {
-            background-color: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 12px;
-            margin-bottom: 3rem;
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .about-composer p {
-            margin-bottom: 1rem;
-            color: #d0d0d0;
-            font-size: 1.05rem;
-        }
-
-        .about-composer ul {
-            margin: 1rem 0 1rem 1.5rem;
-            color: #d0d0d0;
-        }
-
-        .about-composer li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Video Grid */
-        .video-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
 
-        .video-card {
+        article.card {
             background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #2a2d3d;
+            padding: 1.5rem;
             display: flex;
             flex-direction: column;
         }
 
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
+        article.card h3 {
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
         }
 
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .card-content {
-            padding: 1.2rem;
+        article.card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
             flex-grow: 1;
         }
 
-        .card-content h3 {
-            font-size: 1.15rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .card-content p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .badge {
-            display: inline-block;
-            background-color: rgba(255, 51, 102, 0.15);
-            color: var(--primary-color);
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 0.25rem 0.6rem;
-            border-radius: 12px;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Article Content Box - Needed to pass AdSense Low Value Policy */
-        .song-article {
-            background-color: #141720;
-            padding: 1rem;
-            border-radius: 6px;
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-            color: #b0b0b0;
-        }
-
-        /* Contact Section */
-        .contact-section {
+        .content-block {
             background-color: var(--card-bg);
-            padding: 2rem;
+            border: 1px solid var(--border-color);
             border-radius: 8px;
+            padding: 2rem;
             margin-bottom: 3rem;
         }
 
-        .form-group {
-            margin-bottom: 1.2rem;
+        .content-block h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text-color);
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border-radius: 6px;
-            border: 1px solid #333;
-            background-color: #0f1117;
-            color: white;
-            font-size: 1rem;
+        .content-block p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
         }
 
         footer {
-            background-color: var(--nav-bg);
-            padding: 2rem 1rem;
+            background-color: #020617;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
             text-align: center;
             color: var(--text-muted);
-            border-top: 1px solid #2a2d3d;
+            font-size: 0.9rem;
         }
 
         footer a {
-            color: var(--primary-color);
-            text-decoration: none;
+            color: var(--text-muted);
+            text-decoration: underline;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            color: var(--accent);
         }
 
         @media (max-width: 768px) {
@@ -288,178 +211,117 @@
                 flex-direction: column;
                 gap: 1rem;
             }
-            .hero h1 {
-                font-size: 2rem;
+            nav a {
+                margin: 0 0.5rem;
             }
         }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0584395743022557"
-     crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">Aarya Soul Band</a>
+            <a href="#" class="logo">AARYA SOUL BAND</a>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#releases">Top Releases</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#releases">Releases</a>
+                <a href="#about">About</a>
+                <a href="#articles">Journal</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <div class="container">
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section class="hero">
             <h1>Aarya Soul Band</h1>
-            <p>Original Music Composition, Penning Soulful Lyrics, & Creating Independent Kannada Hits.</p>
-            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener" class="btn">Subscribe on YouTube</a>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about-me" class="about-composer">
-            <h2 class="section-title">About My Work & Craft</h2>
-            <p>Welcome to <strong>Aarya Soul Band</strong>. As an independent composer, lyricist, and producer, I dedicate my passion to crafting original Kannada melodies that touch emotions and resonate deeply with listeners.</p>
-            <p>In today's Kannada independent music scene, creating high-quality original content requires distinct songwriting, meaningful lyric writing, and meticulous musical arrangements. My mission is to give genuine hit tracks to the independent Kannada artist space.</p>
-            <ul>
-                <li><strong>Original Music Composition:</strong> Writing acoustic, emotional, and devotional melodies built from the ground up.</li>
-                <li><strong>Lyric Writing:</strong> Penning authentic Kannada lyrics that express real life, love, relationships, and devotion.</li>
-                <li><strong>Independent Hits:</strong> Delivering popular hits like <em>Helikodu O Devare</em> (113K+ views) and <em>Nan Devathe</em> (81K+ views).</li>
-            </ul>
-        </section>
-
-        <!-- Top Ad Unit Placeholder -->
-        <div class="ad-container">
-            <small style="color: #666; display: block; margin-bottom: 5px;">ADVERTISEMENT</small>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-YOUR_CLIENT_ID"
-                 data-ad-slot="YOUR_AD_SLOT_ID_1"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <!-- Featured Popular Releases Grid -->
-        <section id="releases">
-            <h2 class="section-title">Top Originals & Featured Songs</h2>
-            <div class="video-grid">
-
-                <!-- Song 1: Helikodu O Devare -->
-                <article class="video-card">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/Azb--CsL73s" title="Helikodu O Devare - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <span class="badge">🔥 113K+ Views (Top Hit)</span>
-                        <h3>ಹೇಳಿಕೊಡು ಓ ದೇವರೆ | Helikodu O Devare</h3>
-                        <p>An original Kannada composition exploring spiritual surrender and guidance.</p>
-                        <div class="song-article">
-                            <strong>About this track:</strong> Composed and written as a deep emotional plea for divine guidance. The melody blends traditional Kannada lyrical style with modern acoustic arrangements.
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Song 2: Nan Devathe -->
-                <article class="video-card">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/-hFYjeEWo34" title="Nan Devathe - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <span class="badge">🔥 81K+ Views (Superhit)</span>
-                        <h3>ನನ್ ದೇವತೆ | Nan Devathe</h3>
-                        <p>An original romantic Kannada melody expressing heartfelt adoration and pure love.</p>
-                        <div class="song-article">
-                            <strong>About this track:</strong> Penned and composed as a soulful love song. Rich in acoustic guitar textures and poignant Kannada lyrics, it quickly became a fan favorite across streaming platforms.
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Song 3: Devrig Bitte -->
-                <article class="video-card">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/R8i_DL14Vks" title="Devrig Bitte - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <span class="badge">🔥 23K+ Views</span>
-                        <h3>ದೇವ್ರಿಗ್ ಬಿಟ್ಟೆ | Devrig Bitte</h3>
-                        <p>A hit lyrical release capturing real life emotions and acceptance.</p>
-                        <div class="song-article">
-                            <strong>About this track:</strong> Written to express the feeling of letting go and trusting destiny. One of our most appreciated independent hits across social platforms.
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Song 4: Thoro Bhagavanta -->
-                <article class="video-card">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/yUleHRgLp1g" title="Thoro Bhagavanta - Aarya Soul Band" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <span class="badge">✨ Devotional Single</span>
-                        <h3>ತೋರೋ ಭಗವಂತ | Thoro Bhagavanta</h3>
-                        <p>A devotional song filled with vocal expression and acoustic depth.</p>
-                        <div class="song-article">
-                            <strong>About this track:</strong> Features spiritual lyrics written to bring inner peace and reflection through pure music arrangements.
-                        </div>
-                    </div>
-                </article>
-
+            <p>Independent Kannada Music Production, Cinematic Orchestration, and Lyricist Journal based in Bengaluru, India.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@aaryasoulband" target="_blank" rel="noopener" class="btn">YouTube Channel</a>
+                <a href="https://www.instagram.com/aarya_soul_band" target="_blank" rel="noopener" class="btn btn-outline">Instagram (@aarya_soul_band)</a>
             </div>
         </section>
 
-        <!-- Bottom Ad Unit Placeholder -->
-        <div class="ad-container">
-            <small style="color: #666; display: block; margin-bottom: 5px;">ADVERTISEMENT</small>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-YOUR_CLIENT_ID"
-                 data-ad-slot="YOUR_AD_SLOT_ID_2"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+        <!-- MUSIC RELEASES SECTION -->
+        <h2 class="section-title" id="releases">Discography & Lyric Breakdowns</h2>
+        <div class="grid">
+
+            <article class="card">
+                <h3>Helikodu O Devare</h3>
+                <p>A deep, soulful Kannada composition dissecting spiritual search and internal harmony. Featuring acoustic arrangements layered over modern synth pads to create an evocative listening experience.</p>
+            </article>
+
+            <article class="card">
+                <h3>Hariva Neerina Jhari Neenu (ಝರಿ)</h3>
+                <p>An acoustic romance ballad inspired by flowing natural waters and mountain streams. Engineered with clean acoustic guitars, intricate bass dynamics, and vocal presence.</p>
+            </article>
+
+            <article class="card">
+                <h3>Yenaadre Yenu Shiva</h3>
+                <p>A devotional fusion piece combining classical rhythmic structures with contemporary rock elements, dedicated to spiritual strength and devotion.</p>
+            </article>
+
+            <article class="card">
+                <h3>Malle Megha</h3>
+                <p>Atmospheric background scores and melodic arrangements celebrating the onset of monsoon rains through lush string layers and emotive vocal lines.</p>
+            </article>
+
+            <article class="card">
+                <h3>Thoro Bhagavanta</h3>
+                <p>A reflective single exploring life lessons and inner peace, combining rhythmic acoustic strumming with expressive vocal production.</p>
+            </article>
+
+            <article class="card">
+                <h3>Teppayte Cheluvi Teppayte</h3>
+                <p>A vibrant folk-inspired track featuring authentic regional percussion, celebratory melodies, and rich rhythmic arrangements.</p>
+            </article>
+
         </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Contact & Collaborations</h2>
-            <form action="#" method="POST" onsubmit="alert('Thank you! Your message has been received.'); return false;">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Inquiries for song composition, lyrics writing, or music production..."></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
+        <!-- JOURNAL / BLOG CONTENT SECTION (REQUIRED FOR ADSENSE CONTENT DEPTH) -->
+        <h2 class="section-title" id="articles">Independent Production Journal</h2>
+        
+        <div class="content-block">
+            <h2>The Craft of Independent Kannada Music Production</h2>
+            <p>Independent music creation in Bengaluru requires balancing authentic regional storytelling with high-standard digital audio engineering. For Aarya Soul Band, each composition begins as an exploration of rhythm and narrative. Crafting tracks like <em>Hariva Neerina Jhari Neenu</em> involves blending traditional acoustic instrumentation with precise digital mixing workflows.</p>
+            <p>Audio engineering plays a vital role in independent releases. Managing dynamic ranges, balancing vocal frequencies against rich instrumental backdrops, and fine-tuning acoustic spatiality ensure that every track delivers emotional clarity across both dynamic audio systems and mobile devices.</p>
+        </div>
 
-    </main>
+        <div class="content-block">
+            <h2>Bridging Traditional Kannada Lyrics with Modern Orchestration</h2>
+            <p>Kannada literature and poetry carry profound emotional depth, and adapting these linguistic nuances into contemporary arrangements requires careful song design. Songs such as <em>Helikodu O Devare</em> and <em>Thoro Bhagavanta</em> utilize traditional poetic phrasing anchored by modern cinematic scoring.</p>
+            <p>By integrating regional folk rhythms with contemporary production tools, independent musicians can preserve traditional lyrical beauty while delivering fresh sonic experiences to global listeners across digital platforms like YouTube, Spotify, and Instagram.</p>
+        </div>
 
-    <!-- Footer -->
+        <!-- ABOUT SECTION -->
+        <div class="content-block" id="about">
+            <h2>About Aarya Soul Band</h2>
+            <p>Aarya Soul Band is an independent music endeavor created and led by Santhosh S R in Bengaluru, Karnataka. Dedicated to producing original Kannada songs, background scores, and cinematic audio experiences, the project brings together original songwriting, vocal performance, and modern audio engineering.</p>
+            <p>Follow our journey on social media via Instagram <strong>@aarya_soul_band</strong> and subscribe to our official YouTube channel for official video releases, lyric videos, and behind-the-scenes studio sessions.</p>
+        </div>
+
+        <!-- MANDATORY ADSENSE POLICY PAGES -->
+        <div class="content-block" id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>At <strong>aaryasoulband.com</strong>, the privacy of our visitors is of extreme importance to us. This Privacy Policy document outlines the types of personal information received and collected by aaryasoulband.com and how it is used.</p>
+            <p><strong>Log Files & Analytics:</strong> Like many other Web sites, aaryasoulband.com makes use of log files and third-party analytics tools. The information inside the log files includes internet protocol (IP) addresses, type of browser, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and number of clicks to analyze trends and administer the site.</p>
+            <p><strong>Cookies & Web Beacons:</strong> aaryasoulband.com uses cookies to store information about visitors' preferences, user-specific information on which pages the user accesses or visits, and customizes web page content based on visitors' browser type or other information that the visitor sends via their browser.</p>
+            <p><strong>Google AdSense & DoubleClick DART Cookies:</strong> Google, as a third-party vendor, uses cookies to serve ads on aaryasoulband.com. Google's use of the DART cookie enables it to serve ads to users based on their visit to this site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network Privacy Policy.</p>
+        </div>
+
+        <div class="content-block" id="contact">
+            <h2>Contact Us</h2>
+            <p>For official inquiries, music licensing, or collaboration opportunities, reach out directly:</p>
+            <p><strong>Email:</strong> contact@aaryasoulband.com</p>
+            <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/aarya_soul_band" target="_blank" style="color:var(--accent);">@aarya_soul_band</a></p>
+        </div>
+
+    </div>
+
     <footer>
-        <p>&copy; 2026 Aarya Soul Band. All Rights Reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem;">
-            <a href="#privacy">Privacy Policy</a> | 
-            <a href="#terms">Terms of Service</a> | 
-            <a href="https://www.youtube.com/@AaryaSoulBand" target="_blank" rel="noopener">Official YouTube Channel</a>
-        </p>
+        <p>&copy; 2026 Aarya Soul Band. All Rights Reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#contact">Contact</a></p>
     </footer>
 
 </body>
